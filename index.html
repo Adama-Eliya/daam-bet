@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion des matchs et combinaisons</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Section saisie matchs -->
+    <div class="match-input">
+        <h2>Ajouter un match</h2>
+        <input type="text" id="team1" placeholder="Équipe 1">
+        <input type="text" id="team2" placeholder="Équipe 2">
+        <button id="addMatchBtn">Ajouter au panier</button>
+    </div>
+
+    <!-- Panier à droite -->
+    <div class="panier-container">
+        <h2>Panier</h2>
+        <div id="panier" class="panier"></div>
+        <button id="clearPanierBtn">Supprimer tous</button>
+    </div>
+
+    <!-- Paramètres -->
+    <div class="params">
+        <h2>Paramètres des combinaisons</h2>
+        <label>Nombre de matchs par combinaison: 
+            <input type="number" id="nbCombMatch" min="0" value="0">
+        </label>
+        <label>Nombre de paris à générer: 
+            <input type="number" id="nbParis" min="0" value="0">
+        </label>
+        <button id="generateBtn">Générer les combinaisons</button>
+    </div>
+
+    <!-- Combinaisons générées -->
+    <div class="combinations-container">
+        <h2>Combinaisons générées</h2>
+        <div id="combinations" class="combinations"></div>
+    </div>
+    
+</div>
+<script type="module" src="index.js"></script>
+</body>
+</html>
